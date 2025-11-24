@@ -1,0 +1,5 @@
+a="abcdefghijklmnopqrstuvwxyz"
+pt="hello"; key="key"
+print("".join(a[(a.index(p)+a.index(key[i%len(key)]))%26] for i,p in enumerate(pt)))
+ 
+polyalphabetic
