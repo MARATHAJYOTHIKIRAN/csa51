@@ -1,0 +1,10 @@
+# SIMPLE DES SUBKEY BIT-SPLIT DEMO (NOT FULL DES)
+
+key = input("Enter 56-bit key: ")
+
+left_28  = key[:28]
+right_28 = key[28:]
+
+print("First 28 bits :", left_28)
+print("Second 28 bits:", right_28)
+ 4. DES 56-bit key splitting
