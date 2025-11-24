@@ -1,0 +1,7 @@
+a="abcdefghijklmnopqrstuvwxyz"
+k="qwertyuiopasdfghjklzxcvbnm"   # cipher alphabet
+pt="hello"
+ct="".join(k[a.index(c)] for c in pt)
+print(ct)
+
+mono substitiuion
