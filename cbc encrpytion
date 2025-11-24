@@ -1,0 +1,8 @@
+from Crypto.Cipher import AES; from Crypto.Random import get_random_bytes
+k=get_random_bytes(16); iv=get_random_bytes(16)
+c=AES.new(k,AES.MODE_CBC,iv)
+d=b"hello world 1234"    # must be 16 bytes
+print(c.encrypt(d))
+
+
+cbc encrpytion
