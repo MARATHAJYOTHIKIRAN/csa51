@@ -1,0 +1,7 @@
+a="abcdefghijklmnopqrstuvwxyz"
+k="cipher"
+seq=k+"".join(x for x in a if x not in k)
+pt="hello"
+print("".join(seq[a.index(c)] for c in pt))
+
+key word mono
