@@ -1,0 +1,8 @@
+from collections import Counter
+a="abcdefghijklmnopqrstuvwxyz"
+c="wkh txlfn..."  # ciphertext
+m=Counter(c.replace(" ","")).most_common()[0][0]
+s=a.index(m)-a.index("e")
+print("".join(a[(a.index(x)-s)%26] if x in a else x for x in c))
+
+freq attack on mono alphabetic
