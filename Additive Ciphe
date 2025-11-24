@@ -1,0 +1,15 @@
+# SIMPLE ADDITIVE CIPHER FREQUENCY ATTACK
+
+def decrypt_additive(cipher, key):
+    res = ""
+    for c in cipher:
+        if c.isalpha():
+            res += chr((ord(c)-97 - key) % 26 + 97)
+    return res
+
+cipher = input("Enter ciphertext: ").lower()
+
+print("\nTrying all keys (0–25):")
+for key in range(26):
+    print(f"Key {key}: {decrypt_additive(cipher, key)}")
+Additive Ciphe
